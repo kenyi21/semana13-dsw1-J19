@@ -1,4 +1,4 @@
-@server = https://fictional-couscous-vgqvx74v6cv76-8080.app.github.dev
+@server = https://ominous-doodle-6jq6gv4g4rvf9j4-8080.app.github.dev
 ###
 GET {{server}}/api/instrumentos/2
 ###
@@ -20,4 +20,6 @@ GET {{server}}/api/bandas/1
 ###
 GET {{server}}/api/bandas/1/formacion
 ###
-GET {{server}}/api/integrantes
+GET {{server}}/api/categorias
+###
+GET {{server}}/api/productos/formacion
