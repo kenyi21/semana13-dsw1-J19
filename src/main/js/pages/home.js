@@ -47,7 +47,7 @@ const Titulo = (props) => {
 class ProductoList extends React.Component {
 	render() {
 		const products = this.props.productos.map(det =>
-			<Producto key={det.ID} detalle={det} />
+			<Producto key={det.ID} producto={det} />
 		);
 		
 		return (
@@ -58,6 +58,7 @@ class ProductoList extends React.Component {
 						<th>ID</th>
 						<th>NOMBRE</th>
 						<th>CATEGORIA</th>
+						<th>PRECIO</th>
 					</tr>
 					{products}
 				</tbody>
@@ -72,9 +73,10 @@ class Producto extends React.Component {
 	render() {
 		return (
 			<tr>
-				<td>{this.props.detalle.ID}</td>
-				<td>{this.props.detalle.PRODUCTO}</td>
-				<td>{this.props.detalle.CATEGORIA}</td>
+				<td>{this.props.producto.ID}</td>
+				<td>{this.props.producto.PRODUCTO}</td>
+				<td>{this.props.producto.CATEGORIA}</td>
+				<td>{this.props.producto.PRECIO}</td>
 			</tr>
 		)
 	}

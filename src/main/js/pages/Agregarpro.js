@@ -51,7 +51,7 @@ const AgregarPro = ()=>{
                 <label>Nombre </label>
                 <input type='text' name="nombre" id="nombre" value={ nombre } onChange={ (e)=>{ setNombre(e.target.value) } } />
                 <label>Precio </label>
-                <input type='text' name="precio" id="precio" value={ precio } onChange={ (e)=>{ setPrecio(e.target.value) } } />
+                <input type='number' name="precio" id="precio" value={ precio } onChange={ (e)=>{ setPrecio(e.target.value) } } />
                 <input type="submit" value="Guardar" />
             </form>
         </>
